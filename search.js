@@ -3,7 +3,6 @@ class search {
         search.dictionary = dictionary;
 
         for (let [key, value] of Object.entries(dictionary)) {
-            console.log(document.getElementById("search.text").value);
             if (value.includes(document.getElementById("search.text").value)) {
                 let link = document.createElement("a");
                 link.setAttribute("href", key);
