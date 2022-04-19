@@ -2,10 +2,10 @@ class search {
     static setDictionary(dictionary) {
         search.dictionary = dictionary;
 
-        for (let key in dictionary) {
+        for (let [key, value] of Object.entries(dictionary)) {
             let link = document.createElement("a");
             link.setAttribute("href", key);
-            link.appendChild(document.createTextNode(dictionary[key]));
+            link.appendChild(document.createTextNode(value));
 
             let paragraph = document.createElement("p");
             paragraph.appendChild(link);
@@ -21,11 +21,11 @@ document.getElementById("search.text").addEventListener("input", function(e) {
     while (results.firstChild)
         results.removeChild(results.lastChild);
 
-    for (let key in search.dictionary) {
-        if (search.dictionary[key].includes(e.target.value)) {
+    for (let [key, value] of Object.entries(search.dictionary)) {
+        if (value.includes(e.target.value)) {
             let link = document.createElement("a");
             link.setAttribute("href", key);
-            link.appendChild(document.createTextNode(search.dictionary[key]));
+            link.appendChild(document.createTextNode(value));
 
             let paragraph = document.createElement("p");
             paragraph.appendChild(link);
