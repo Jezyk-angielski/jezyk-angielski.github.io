@@ -2,18 +2,20 @@ class search {
     static setDictionary(dictionary) {
         search.dictionary = dictionary;
 
-        for (let [key, value] of Object.entries(dictionary)) {
-            if (value.includes(document.getElementById("search.text").value)) {
-                let link = document.createElement("a");
-                link.setAttribute("href", key);
-                link.appendChild(document.createTextNode(value));
+        setTimeout(function() {
+            for (let [key, value] of Object.entries(search.dictionary)) {
+                if (value.includes(document.getElementById("search.text").value)) {
+                    let link = document.createElement("a");
+                    link.setAttribute("href", key);
+                    link.appendChild(document.createTextNode(value));
 
-                let paragraph = document.createElement("p");
-                paragraph.appendChild(link);
+                    let paragraph = document.createElement("p");
+                    paragraph.appendChild(link);
 
-                document.getElementById("search.results").appendChild(paragraph);
+                    document.getElementById("search.results").appendChild(paragraph);
+                }
             }
-        }
+        }, 0);
     }
 };
 
