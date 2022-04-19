@@ -8,24 +8,31 @@
         <p><a href="/">Strona główna</a></p>
         <div>
             <h2>Rodzina</h2>
-            <p><a href="aunt">aunt</a></p>
-            <p><a href="brother">brother</a></p>
-            <p><a href="dad">dad</a></p>
-            <p><a href="daughter">daughter</a></p>
-            <p><a href="family">family</a></p>
-            <p><a href="father">father</a></p>
-            <p><a href="grandfather">grandfather</a></p>
-            <p><a href="grandmother">grandmother</a></p>
-            <p><a href="husband">husband</a></p>
-            <p><a href="marriage">marriage</a></p>
-            <p><a href="mom">mom</a></p>
-            <p><a href="mother">mother</a></p>
-            <p><a href="parent">parent</a></p>
-            <p><a href="sibling">sibling</a></p>
-            <p><a href="sister">sister</a></p>
-            <p><a href="son">son</a></p>
-            <p><a href="uncle">uncle</a></p>
-            <p><a href="wife">wife</a></p>
+            <p>Szukaj: <input type="text" id="search.text"></p>
+            <div id="search.results"></div>
+            <script src="search.js"></script>
+            <script>
+                search.setDictionary({
+                    "aunt": "aunt",
+                    "brother": "brother",
+                    "dad": "dad",
+                    "daughter": "daughter",
+                    "family": "family",
+                    "father": "father",
+                    "grandfather": "grandfather",
+                    "grandmother": "grandmother",
+                    "husband": "husband",
+                    "marriage": "marriage",
+                    "mom": "mom",
+                    "mother": "mother",
+                    "parent": "parent",
+                    "sibling": "sibling",
+                    "sister": "sister",
+                    "son": "son",
+                    "uncle": "uncle",
+                    "wife": "wife"
+                });
+            </script>
         </div>
     </body>
 </html>

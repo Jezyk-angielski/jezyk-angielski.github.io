@@ -8,15 +8,22 @@
         <p><a href="/">Strona główna</a></p>
         <div>
             <h2>Ubrania</h2>
-            <p><a href="dress">dress</a></p>
-            <p><a href="clothes">clothes</a></p>
-            <p><a href="coat">coat</a></p>
-            <p><a href="hat">hat</a></p>
-            <p><a href="pants">pants</a></p>
-            <p><a href="shirt">shirt</a></p>
-            <p><a href="shoe">shoe</a></p>
-            <p><a href="skirt">skirt</a></p>
-            <p><a href="suit">suit</a></p>
+            <p>Szukaj: <input type="text" id="search.text"></p>
+            <div id="search.results"></div>
+            <script src="search.js"></script>
+            <script>
+                search.setDictionary({
+                    "dress": "dress",
+                    "clothes": "clothes",
+                    "coat": "coat",
+                    "hat": "hat",
+                    "pants": "pants",
+                    "shirt": "shirt",
+                    "shoe": "shoe",
+                    "skirt": "skirt",
+                    "suit": "suit"
+                });
+            </script>
         </div>
     </body>
 </html>

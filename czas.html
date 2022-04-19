@@ -8,14 +8,21 @@
         <p><a href="/">Strona główna</a></p>
         <div>
             <h2>Czas</h2>
-            <p><a href="period">period</a></p>
-            <p><a href="time">time</a></p>
-            <p><a href="second">second</a></p>
-            <p><a href="minute">minute</a></p>
-            <p><a href="hour">hour</a></p>
-            <p><a href="day">day</a></p>
-            <p><a href="month">month</a></p>
-            <p><a href="year">year</a></p>
+            <p>Szukaj: <input type="text" id="search.text"></p>
+            <div id="search.results"></div>
+            <script src="search.js"></script>
+            <script>
+                search.setDictionary({
+                    "period": "period",
+                    "time": "time",
+                    "second": "second",
+                    "minute": "minute",
+                    "hour": "hour",
+                    "day": "day",
+                    "month": "month",
+                    "year": "year"
+                });
+            </script>
         </div>
     </body>
 </html>

@@ -8,8 +8,15 @@
         <p><a href="/">Strona główna</a></p>
         <div>
             <h2>Pory dnia</h2>
-            <p><a href="morning">morning</a></p>
-            <p><a href="night">night</a></p>
+            <p>Szukaj: <input type="text" id="search.text"></p>
+            <div id="search.results"></div>
+            <script src="search.js"></script>
+            <script>
+                search.setDictionary({
+                    "morning": "morning",
+                    "night": "night"
+                });
+            </script>
         </div>
     </body>
 </html>

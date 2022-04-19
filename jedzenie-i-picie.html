@@ -8,40 +8,47 @@
         <p><a href="/">Strona główna</a></p>
         <div>
             <h2>Jedzenie i picie</h2>
-            <p><a href="apple">apple</a></p>
-            <p><a href="beef">beef</a></p>
-            <p><a href="beer">beer</a></p>
-            <p><a href="bread">bread</a></p>
-            <p><a href="breakfast">breakfast</a></p>
-            <p><a href="cheese">cheese</a></p>
-            <p><a href="chicken">chicken</a></p>
-            <p><a href="coffee">coffee</a></p>
-            <p><a href="dinner">dinner</a></p>
-            <p><a href="egg">egg</a></p>
-            <p><a href="fish">fish</a></p>
-            <p><a href="food">food</a></p>
-            <p><a href="fruit">fruit</a></p>
-            <p><a href="juice">juice</a></p>
-            <p><a href="lemon">lemon</a></p>
-            <p><a href="lunch">lunch</a></p>
-            <p><a href="meal">meal</a></p>
-            <p><a href="meat">meat</a></p>
-            <p><a href="menu">menu</a></p>
-            <p><a href="milk">milk</a></p>
-            <p><a href="orange">orange</a></p>
-            <p><a href="pasta">pasta</a></p>
-            <p><a href="plate">plate</a></p>
-            <p><a href="pork">pork</a></p>
-            <p><a href="rice">rice</a></p>
-            <p><a href="salt">salt</a></p>
-            <p><a href="sandwich">sandwich</a></p>
-            <p><a href="soup">soup</a></p>
-            <p><a href="strawberry">strawberry</a></p>
-            <p><a href="sugar">sugar</a></p>
-            <p><a href="tea">tea</a></p>
-            <p><a href="tomato">tomato</a></p>
-            <p><a href="water">water</a></p>
-            <p><a href="wine">wine</a></p>
+            <p>Szukaj: <input type="text" id="search.text"></p>
+            <div id="search.results"></div>
+            <script src="search.js"></script>
+            <script>
+                search.setDictionary({
+                    "apple": "apple",
+                    "beef": "beef",
+                    "beer": "beer",
+                    "bread": "bread",
+                    "breakfast": "breakfast",
+                    "cheese": "cheese",
+                    "chicken": "chicken",
+                    "coffee": "coffee",
+                    "dinner": "dinner",
+                    "egg": "egg",
+                    "fish": "fish",
+                    "food": "food",
+                    "fruit": "fruit",
+                    "juice": "juice",
+                    "lemon": "lemon",
+                    "lunch": "lunch",
+                    "meal": "meal",
+                    "meat": "meat",
+                    "menu": "menu",
+                    "milk": "milk",
+                    "orange": "orange",
+                    "pasta": "pasta",
+                    "plate": "plate",
+                    "pork": "pork",
+                    "rice": "rice",
+                    "salt": "salt",
+                    "sandwich": "sandwich",
+                    "soup": "soup",
+                    "strawberry": "strawberry",
+                    "sugar": "sugar",
+                    "tea": "tea",
+                    "tomato": "tomato",
+                    "water": "water",
+                    "wine": "wine"
+                });
+            </script>
         </div>
     </body>
 </html>

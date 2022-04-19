@@ -8,29 +8,36 @@
         <p><a href="/">Strona główna</a></p>
         <div>
             <h2>Praca</h2>
-            <p><a href="actor">actor</a></p>
-            <p><a href="actress">actress</a></p>
-            <p><a href="artist">artist</a></p>
-            <p><a href="author">author</a></p>
-            <p><a href="authoress">authoress</a></p>
-            <p><a href="boss">boss</a></p>
-            <p><a href="captain">captain</a></p>
-            <p><a href="captainess">captainess</a></p>
-            <p><a href="career">career</a></p>
-            <p><a href="director">director</a></p>
-            <p><a href="directress">directress</a></p>
-            <p><a href="engineer">engineer</a></p>
-            <p><a href="guard">guard</a></p>
-            <p><a href="job">job</a></p>
-            <p><a href="lawyer">lawyer</a></p>
-            <p><a href="officer">officer</a></p>
-            <p><a href="profession">profession</a></p>
-            <p><a href="professional">professional</a></p>
-            <p><a href="staff">staff</a></p>
-            <p><a href="waiter">waiter</a></p>
-            <p><a href="waitress">waitress</a></p>
-            <p><a href="work">work</a></p>
-            <p><a href="worker">worker</a></p>
+            <p>Szukaj: <input type="text" id="search.text"></p>
+            <div id="search.results"></div>
+            <script src="search.js"></script>
+            <script>
+                search.setDictionary({
+                    "actor": "actor",
+                    "actress": "actress",
+                    "artist": "artist",
+                    "author": "author",
+                    "authoress": "authoress",
+                    "boss": "boss",
+                    "captain": "captain",
+                    "captainess": "captainess",
+                    "career": "career",
+                    "director": "director",
+                    "directress": "directress",
+                    "engineer": "engineer",
+                    "guard": "guard",
+                    "job": "job",
+                    "lawyer": "lawyer",
+                    "officer": "officer",
+                    "profession": "profession",
+                    "professional": "professional",
+                    "staff": "staff",
+                    "waiter": "waiter",
+                    "waitress": "waitress",
+                    "work": "work",
+                    "worker": "worker"
+                });
+            </script>
         </div>
     </body>
 </html>

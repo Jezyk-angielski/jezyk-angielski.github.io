@@ -8,17 +8,24 @@
         <p><a href="/">Strona główna</a></p>
         <div>
             <h2>Kolory</h2>
-            <p><a href="black">black</a></p>
-            <p><a href="blue">blue</a></p>
-            <p><a href="brown">brown</a></p>
-            <p><a href="gray">gray</a></p>
-            <p><a href="green">green</a></p>
-            <p><a href="orange">orange</a></p>
-            <p><a href="pink">pink</a></p>
-            <p><a href="purple">purple</a></p>
-            <p><a href="red">red</a></p>
-            <p><a href="white">white</a></p>
-            <p><a href="yellow">yellow</a></p>
+            <p>Szukaj: <input type="text" id="search.text"></p>
+            <div id="search.results"></div>
+            <script src="search.js"></script>
+            <script>
+                search.setDictionary({
+                    "black": "black",
+                    "blue": "blue",
+                    "brown": "brown",
+                    "gray": "gray",
+                    "green": "green",
+                    "orange": "orange",
+                    "pink": "pink",
+                    "purple": "purple",
+                    "red": "red",
+                    "white": "white",
+                    "yellow": "yellow"
+                });
+            </script>
         </div>
     </body>
 </html>
