@@ -12,9 +12,11 @@
             <div id="search.results"></div>
             <script src="search.js"></script>
             <script>
-                search.setDictionary({
-                    "morning": "morning",
-                    "night": "night"
+                window.addEventListener("load", function() {
+                    search.setDictionary({
+                        "morning": "morning",
+                        "night": "night"
+                    });
                 });
             </script>
         </div>

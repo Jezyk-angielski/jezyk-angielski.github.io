@@ -9,21 +9,23 @@
         <div id="search.results"></div>
         <script src="search.js"></script>
         <script>
-            search.setDictionary({
-                "kolory": "Kolory",
-                "czas": "Czas",
-                "pory-roku": "Pory roku",
-                "miesiace": "Miesiące",
-                "pory-dnia": "Pory dnia",
-                "zwierzeta": "Zwierzęta",
-                "ludzie": "Ludzie",
-                "rodzina": "Rodzina",
-                "praca": "Praca",
-                "ubrania": "Ubrania",
-                "jedzenie-i-picie": "Jedzenie i picie",
-                "jezyki": "Języki",
-                "czytanie": "Czytanie",
-                "pojecia-abstrakcyjne": "Pojęcia abstrakcyjne"
+            window.addEventListener("load", function() {
+                search.setDictionary({
+                    "kolory": "Kolory",
+                    "czas": "Czas",
+                    "pory-roku": "Pory roku",
+                    "miesiace": "Miesiące",
+                    "pory-dnia": "Pory dnia",
+                    "zwierzeta": "Zwierzęta",
+                    "ludzie": "Ludzie",
+                    "rodzina": "Rodzina",
+                    "praca": "Praca",
+                    "ubrania": "Ubrania",
+                    "jedzenie-i-picie": "Jedzenie i picie",
+                    "jezyki": "Języki",
+                    "czytanie": "Czytanie",
+                    "pojecia-abstrakcyjne": "Pojęcia abstrakcyjne"
+                });
             });
         </script>
     </body>

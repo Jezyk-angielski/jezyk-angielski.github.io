@@ -12,13 +12,15 @@
             <div id="search.results"></div>
             <script src="search.js"></script>
             <script>
-                search.setDictionary({
-                    "boy": "boy",
-                    "child": "child",
-                    "girl": "girl",
-                    "man": "man",
-                    "vegetarian": "vegetarian",
-                    "woman": "woman"
+                window.addEventListener("load", function() {
+                    search.setDictionary({
+                        "boy": "boy",
+                        "child": "child",
+                        "girl": "girl",
+                        "man": "man",
+                        "vegetarian": "vegetarian",
+                        "woman": "woman"
+                    });
                 });
             </script>
         </div>

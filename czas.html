@@ -12,15 +12,17 @@
             <div id="search.results"></div>
             <script src="search.js"></script>
             <script>
-                search.setDictionary({
-                    "period": "period",
-                    "time": "time",
-                    "second": "second",
-                    "minute": "minute",
-                    "hour": "hour",
-                    "day": "day",
-                    "month": "month",
-                    "year": "year"
+                window.addEventListener("load", function() {
+                    search.setDictionary({
+                        "period": "period",
+                        "time": "time",
+                        "second": "second",
+                        "minute": "minute",
+                        "hour": "hour",
+                        "day": "day",
+                        "month": "month",
+                        "year": "year"
+                    });
                 });
             </script>
         </div>

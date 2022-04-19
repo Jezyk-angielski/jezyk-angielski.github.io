@@ -12,8 +12,10 @@
             <div id="search.results"></div>
             <script src="search.js"></script>
             <script>
-                search.setDictionary({
-                    "english": "English"
+                window.addEventListener("load", function() {
+                    search.setDictionary({
+                        "english": "English"
+                    });
                 });
             </script>
         </div>

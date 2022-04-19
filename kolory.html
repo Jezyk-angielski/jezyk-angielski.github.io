@@ -12,18 +12,20 @@
             <div id="search.results"></div>
             <script src="search.js"></script>
             <script>
-                search.setDictionary({
-                    "black": "black",
-                    "blue": "blue",
-                    "brown": "brown",
-                    "gray": "gray",
-                    "green": "green",
-                    "orange": "orange",
-                    "pink": "pink",
-                    "purple": "purple",
-                    "red": "red",
-                    "white": "white",
-                    "yellow": "yellow"
+                window.addEventListener("load", function() {
+                    search.setDictionary({
+                        "black": "black",
+                        "blue": "blue",
+                        "brown": "brown",
+                        "gray": "gray",
+                        "green": "green",
+                        "orange": "orange",
+                        "pink": "pink",
+                        "purple": "purple",
+                        "red": "red",
+                        "white": "white",
+                        "yellow": "yellow"
+                    });
                 });
             </script>
         </div>
