@@ -21,27 +21,21 @@
             <p class="menuitem"><a href="jezyki">Języki</a></p>
             <p class="menuitem"><a href="czytanie">Czytanie</a></p>
             <p class="menuitem"><a href="pojecia-abstrakcyjne">Pojęcia abstrakcyjne</a></p>
-            <p class="menuitem right"><input type="text" id="search.text" placeholder="Szukaj..."></p>
+            <form class="menuitem right" method="get" action="search"><input type="text" name="query" placeholder="Szukaj..."></form>
         </div>
         <div>
             <h2>Kolory</h2>
-            <div id="search.results"></div>
+            <p><a href="black">black</a></p>
+            <p><a href="blue">blue</a></p>
+            <p><a href="brown">brown</a></p>
+            <p><a href="gray">gray</a></p>
+            <p><a href="green">green</a></p>
+            <p><a href="orange">orange</a></p>
+            <p><a href="pink">pink</a></p>
+            <p><a href="purple">purple</a></p>
+            <p><a href="red">red</a></p>
+            <p><a href="white">white</a></p>
+            <p><a href="yellow">yellow</a></p>
         </div>
-        <script src="search.js"></script>
-        <script>
-            search.setDictionary({
-                "black": "black",
-                "blue": "blue",
-                "brown": "brown",
-                "gray": "gray",
-                "green": "green",
-                "orange": "orange",
-                "pink": "pink",
-                "purple": "purple",
-                "red": "red",
-                "white": "white",
-                "yellow": "yellow"
-            });
-        </script>
     </body>
 </html>

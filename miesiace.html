@@ -21,29 +21,23 @@
             <p class="menuitem"><a href="jezyki">Języki</a></p>
             <p class="menuitem"><a href="czytanie">Czytanie</a></p>
             <p class="menuitem"><a href="pojecia-abstrakcyjne">Pojęcia abstrakcyjne</a></p>
-            <p class="menuitem right"><input type="text" id="search.text" placeholder="Szukaj..."></p>
+            <form class="menuitem right" method="get" action="search"><input type="text" name="query" placeholder="Szukaj..."></form>
         </div>
         <div>
             <h2>Miesiące</h2>
-            <div id="search.results"></div>
+            <p><a href="month">month</a></p>
+            <p><a href="january">January</a></p>
+            <p><a href="february">February</a></p>
+            <p><a href="march">March</a></p>
+            <p><a href="april">April</a></p>
+            <p><a href="may">May</a></p>
+            <p><a href="june">June</a></p>
+            <p><a href="july">July</a></p>
+            <p><a href="august">August</a></p>
+            <p><a href="september">September</a></p>
+            <p><a href="october">October</a></p>
+            <p><a href="november">November</a></p>
+            <p><a href="december">December</a></p>
         </div>
-        <script src="search.js"></script>
-        <script>
-            search.setDictionary({
-                "month": "month",
-                "january": "January",
-                "february": "February",
-                "march": "March",
-                "april": "April",
-                "may": "May",
-                "june": "June",
-                "july": "July",
-                "august": "August",
-                "september": "September",
-                "october": "October",
-                "november": "November",
-                "december": "December"
-            });
-        </script>
     </body>
 </html>

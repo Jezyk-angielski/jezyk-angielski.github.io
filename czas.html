@@ -21,24 +21,18 @@
             <p class="menuitem"><a href="jezyki">Języki</a></p>
             <p class="menuitem"><a href="czytanie">Czytanie</a></p>
             <p class="menuitem"><a href="pojecia-abstrakcyjne">Pojęcia abstrakcyjne</a></p>
-            <p class="menuitem right"><input type="text" id="search.text" placeholder="Szukaj..."></p>
+            <form class="menuitem right" method="get" action="search"><input type="text" name="query" placeholder="Szukaj..."></form>
         </div>
         <div>
             <h2>Czas</h2>
-            <div id="search.results"></div>
+            <p><a href="period">period</a></p>
+            <p><a href="time">time</a></p>
+            <p><a href="second">second</a></p>
+            <p><a href="minute">minute</a></p>
+            <p><a href="hour">hour</a></p>
+            <p><a href="day">day</a></p>
+            <p><a href="month">month</a></p>
+            <p><a href="year">year</a></p>
         </div>
-        <script src="search.js"></script>
-        <script>
-            search.setDictionary({
-                "period": "period",
-                "time": "time",
-                "second": "second",
-                "minute": "minute",
-                "hour": "hour",
-                "day": "day",
-                "month": "month",
-                "year": "year"
-            });
-        </script>
     </body>
 </html>

@@ -21,22 +21,16 @@
             <p class="menuitem"><a href="jezyki">Języki</a></p>
             <p class="menuitem"><a href="czytanie">Czytanie</a></p>
             <p class="menuitem"><a href="pojecia-abstrakcyjne">Pojęcia abstrakcyjne</a></p>
-            <p class="menuitem right"><input type="text" id="search.text" placeholder="Szukaj..."></p>
+            <form class="menuitem right" method="get" action="search"><input type="text" name="query" placeholder="Szukaj..."></form>
         </div>
         <div>
             <h2>Ludzie</h2>
-            <div id="search.results"></div>
+            <p><a href="boy">boy</a></p>
+            <p><a href="child">child</a></p>
+            <p><a href="girl">girl</a></p>
+            <p><a href="man">man</a></p>
+            <p><a href="vegetarian">vegetarian</a></p>
+            <p><a href="woman">woman</a></p>
         </div>
-        <script src="search.js"></script>
-        <script>
-            search.setDictionary({
-                "boy": "boy",
-                "child": "child",
-                "girl": "girl",
-                "man": "man",
-                "vegetarian": "vegetarian",
-                "woman": "woman"
-            });
-        </script>
     </body>
 </html>

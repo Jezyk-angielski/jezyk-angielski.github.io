@@ -21,28 +21,22 @@
             <p class="menuitem"><a href="jezyki">Języki</a></p>
             <p class="menuitem"><a href="czytanie">Czytanie</a></p>
             <p class="menuitem"><a href="pojecia-abstrakcyjne">Pojęcia abstrakcyjne</a></p>
-            <p class="menuitem right"><input type="text" id="search.text" placeholder="Szukaj..."></p>
+            <form class="menuitem right" method="get" action="search"><input type="text" name="query" placeholder="Szukaj..."></form>
         </div>
         <div>
             <h2>Zwierzęta</h2>
-            <div id="search.results"></div>
+            <p><a href="animal">animal</a></p>
+            <p><a href="bear">bear</a></p>
+            <p><a href="bird">bird</a></p>
+            <p><a href="cat">cat</a></p>
+            <p><a href="crab">crab</a></p>
+            <p><a href="dog">dog</a></p>
+            <p><a href="duck">duck</a></p>
+            <p><a href="elephant">elephant</a></p>
+            <p><a href="horse">horse</a></p>
+            <p><a href="mouse">mouse</a></p>
+            <p><a href="spider">spider</a></p>
+            <p><a href="turtle">turtle</a></p>
         </div>
-        <script src="search.js"></script>
-        <script>
-            search.setDictionary({
-                "animal": "animal",
-                "bear": "bear",
-                "bird": "bird",
-                "cat": "cat",
-                "crab": "crab",
-                "dog": "dog",
-                "duck": "duck",
-                "elephant": "elephant",
-                "horse": "horse",
-                "mouse": "mouse",
-                "spider": "spider",
-                "turtle": "turtle"
-            });
-        </script>
     </body>
 </html>
