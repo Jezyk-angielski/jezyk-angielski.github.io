@@ -3,6 +3,10 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+div.menu {
+    background-color: antiquewhite;
+}
+
 h1 {
     margin: 0;
     padding: 1em;
@@ -10,6 +14,9 @@ h1 {
     background-color: burlywood;
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 a {
     color: white;
 }
 
@@ -28,6 +35,10 @@ p {
     padding: 1em;
 }
 
+p.menuitem {
+    display: inline-block;
+}
+
 p.search {
     margin: 0;
     padding: 1em;
@@ -37,8 +48,8 @@ p.search {
 }
 
 a {
-    color: brown;
     text-decoration: none;
+    color: brown;
 }
 
 a:hover {
