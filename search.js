@@ -148,7 +148,7 @@ let params = new URLSearchParams(document.location.search);
 let query = params.get("query");
 
 let title = `Wyniki wyszukiwania dla „${query}”`;
-document.title = title;
+document.title = `${title} - Język angielski`;
 document.getElementById("title").appendChild(document.createTextNode(title));
 
 let found = false;
