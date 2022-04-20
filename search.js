@@ -147,7 +147,12 @@ let dictionary = {
 let params = new URLSearchParams(document.location.search);
 let query = params.get("query");
 
+let title = `Wyniki wyszukiwania dla „${query}”`;
+document.title = title;
+document.getElementById("title").appendChild(document.createTextNode(title));
+
 let found = false;
+
 for (let [key, value] of Object.entries(dictionary)) {
     if (value.includes(query)) {
         let link = document.createElement("a");
