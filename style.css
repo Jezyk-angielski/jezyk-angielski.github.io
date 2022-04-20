@@ -27,16 +27,17 @@ h2 {
 
 h3 {
     margin: 0;
-    padding: 1em;
+    padding: 1em 1.5em;
 }
 
 p {
     margin: 0;
-    padding: 1em;
+    padding: 1em 3em;
 }
 
 p.menuitem {
     display: inline-block;
+    padding: 1em;
 }
 
 a {
