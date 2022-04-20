@@ -4,6 +4,9 @@ body {
 }
 
 div.menu {
+    display: flex;
+    flex-wrap: wrap;
+    
     background-color: antiquewhite;
 }
 
@@ -38,6 +41,10 @@ p {
 p.menuitem {
     display: inline-block;
     padding: 1em;
+}
+
+p.right {
+    margin-left: auto;
 }
 
 a {
