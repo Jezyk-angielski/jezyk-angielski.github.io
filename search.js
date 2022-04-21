@@ -147,9 +147,8 @@ let dictionary = {
 let params = new URLSearchParams(document.location.search);
 let query = params.get("query");
 
-let title = `Wyniki wyszukiwania dla „${query}”`;
-document.title = `${title} - Język angielski`;
-document.getElementById("title").appendChild(document.createTextNode(title));
+document.title = `Wyniki wyszukiwania dla ${query} - Język angielski`;
+document.getElementById("query").appendChild(document.createTextNode(query));
 
 let found = false;
 
