@@ -12,6 +12,15 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 h1 a {
     color: white;
 }
@@ -21,6 +30,11 @@ h1 a {
     flex-wrap: wrap;
     
     background-color: antiquewhite;
+}
+
+p {
+    margin: 0;
+    padding: 1em 3em;
 }
 
 .menu-item {
@@ -49,18 +63,4 @@ h4 {
 
 .translation {
     padding: 1em 4em;
-}
-
-p {
-    margin: 0;
-    padding: 1em 3em;
-}
-
-a {
-    text-decoration: none;
-    color: brown;
-}
-
-a:hover {
-    text-decoration: underline;
 }
