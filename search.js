@@ -1,8 +1,6 @@
-let dictionary;
-
 fetch("/dictionary.json")
     .then(response => response.json())
-    .then(json => {
+    .then(dictionary => {
         let params = new URLSearchParams(document.location.search);
         let query = params.get("query");
 
