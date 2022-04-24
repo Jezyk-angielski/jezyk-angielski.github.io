@@ -5,7 +5,7 @@ fetch("/dictionary.json")
     .then(json => {
         dictionary = json;
 
-        for (let [key, value] in Object.entries(dictionary)) {
+        for (let [key, value] of Object.entries(dictionary)) {
             let link = document.createElement("a");
             link.setAttribute("href", key);
             link.appendChild(document.createTextNode(value));
