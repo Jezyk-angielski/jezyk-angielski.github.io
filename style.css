@@ -71,3 +71,8 @@ h4 {
 .translation {
     padding: 1em 4em;
 }
+
+p img {
+    padding: 0 1em;
+    width: 32em;
+}
