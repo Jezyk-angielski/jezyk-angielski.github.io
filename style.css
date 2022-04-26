@@ -68,11 +68,15 @@ h4 {
     padding: 1em 3em;
 }
 
-.translation {
-    padding: 1em 4em;
+.image {
+    padding: 1em 6em;
 }
 
 p img {
-    padding: 0 1em;
+    max-width: 100%;
     width: 32em;
+}
+
+.translation {
+    padding: 1em 4em;
 }
