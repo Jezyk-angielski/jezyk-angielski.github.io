@@ -12,7 +12,7 @@ fetch("/dictionary.json")
         for (let [key, value] of Object.entries(dictionary)) {
             if (value.includes(query)) {
                 let link = document.createElement("a");
-                link.setAttribute("href", key);
+                link.setAttribute("href", `/slownik/${key}`);
                 link.appendChild(document.createTextNode(value));
 
                 let paragraph = document.createElement("p");
