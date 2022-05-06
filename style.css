@@ -72,6 +72,29 @@ h2 {
     padding: 1em;
 }
 
+@keyframes loading_animation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+#loading {
+    margin: 25% auto 25% auto;
+
+    width: 4em;
+    height: 4em;
+
+    border-radius: 4em;
+    border: 0.25em solid;
+    border-color: black transparent transparent transparent;
+
+    animation: loading_animation 1s linear infinite;
+}
+
 h3 {
     margin: 0;
     padding: 1em 1.5em;
