@@ -10,7 +10,7 @@ fetch("/dictionary.json")
         let found = false;
 
         for (let [key, value] of Object.entries(dictionary)) {
-            if (value.includes(query)) {
+            if (value.toLowerCase().includes(query.toLowerCase())) {
                 let link = document.createElement("a");
                 link.setAttribute("href", `/slownik/${key}`);
                 link.appendChild(document.createTextNode(value));
