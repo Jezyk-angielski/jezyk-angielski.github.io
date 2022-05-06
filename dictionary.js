@@ -12,5 +12,5 @@ fetch("/dictionary.json")
             document.getElementById("results").appendChild(paragraph);
         }
 
-        document.getElementById("loading").style.visibility = "none";
+        document.getElementById("loading").style.display = "none";
     });

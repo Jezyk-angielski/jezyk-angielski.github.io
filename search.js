@@ -23,7 +23,7 @@ fetch("/dictionary.json")
             }
         }
 
-        document.getElementById("loading").style.visibility = "none";
+        document.getElementById("loading").style.display = "none";
         if (!found) {
             let paragraph = document.createElement("p");
             paragraph.appendChild(document.createTextNode("Nie znaleziono niczego."));
