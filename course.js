@@ -11,4 +11,6 @@ fetch("/course.json")
 
             document.getElementById("results").appendChild(paragraph);
         }
+
+        document.getElementById("loading").style.display = "none";
     });
