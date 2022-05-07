@@ -1,12 +1,12 @@
+let searchParams = new URLSearchParams(document.location.search);
+let query = searchParams.get("query");
+
+document.title = `Wyniki wyszukiwania dla „${query}” - Język angielski`;
+document.getElementById("query").appendChild(document.createTextNode(query));
+
 fetch("/dictionary.json")
     .then(response => response.json())
     .then(dictionary => {
-        let params = new URLSearchParams(document.location.search);
-        let query = params.get("query");
-
-        document.title = `Wyniki wyszukiwania dla „${query}” - Język angielski`;
-        document.getElementById("query").appendChild(document.createTextNode(query));
-
         let found = false;
 
         for (let [key, value] of Object.entries(dictionary)) {
