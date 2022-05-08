@@ -72,6 +72,25 @@ h2 {
     padding: 1em;
 }
 
+h2 img {
+    margin-right: 1em;
+    padding: 0.5em;
+
+    width: 1em;
+    border-radius: 1em;
+
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+h2 img:hover {
+    background-color: antiquewhite;
+}
+
+h2 img:active {
+    background-color: burlywood;
+}
+
 @keyframes loading_animation {
     0% {
         transform: rotate(0deg)
