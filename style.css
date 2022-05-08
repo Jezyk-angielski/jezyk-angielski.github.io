@@ -72,7 +72,7 @@ h2 {
     padding: 1em;
 }
 
-h2 img {
+.audio-button {
     margin-right: 1em;
     padding: 0.5em;
 
@@ -83,12 +83,17 @@ h2 img {
     cursor: pointer;
 }
 
-h2 img:hover {
+.audio-button:hover {
     background-color: antiquewhite;
 }
 
-h2 img:active {
+.audio-button:active {
     background-color: burlywood;
+}
+
+p .audio-button {
+    width: 1.5em;
+    border-radius: 1.5em;
 }
 
 @keyframes loading_animation {
