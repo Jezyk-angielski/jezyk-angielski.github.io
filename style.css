@@ -123,9 +123,25 @@ p .audio-button {
     animation: loading_animation 1s linear infinite;
 }
 
+.pages {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 1em 0;
+}
+
+.pages div {
+    flex-grow: 1;
+    text-align: center;
+}
+
 h3 {
     margin: 0;
-    padding: 1em 1.5em;
+    padding: 1em 1.5em 0 1.5em;
+}
+
+.the-end {
+    color: gray;
 }
 
 h4 {
