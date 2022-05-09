@@ -94,6 +94,16 @@ h2 {
 p .audio-button {
     width: 1.5em;
     border-radius: 1.5em;
+
+    margin-right: 0.25em;
+}
+
+a.word {
+    padding-right: 0.5em;
+}
+
+p.word {
+    padding: 0.25em 4em;
 }
 
 .path {
@@ -137,7 +147,7 @@ p .audio-button {
 
 h3 {
     margin: 0;
-    padding: 1em 1.5em 0 1.5em;
+    padding: 1em 1.5em 1em 1.5em;
 }
 
 .the-end {
