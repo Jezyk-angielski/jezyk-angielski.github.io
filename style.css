@@ -69,7 +69,7 @@ p {
 
 h2 {
     margin: 0;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
 }
 
 .audio-button {
@@ -94,6 +94,10 @@ h2 {
 p .audio-button {
     width: 1.5em;
     border-radius: 1.5em;
+}
+
+.path {
+    padding: 1em 1.5em 2em 1.5em;
 }
 
 @keyframes loading_animation {
