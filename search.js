@@ -2,7 +2,11 @@ let searchParams = new URLSearchParams(document.location.search);
 let query = searchParams.get("query");
 
 document.title = `Wyniki wyszukiwania dla „${query}” - Język angielski`;
-document.getElementById("query").appendChild(document.createTextNode(query));
+document.getElementById("query-link").href = document.location.search;
+
+let queryElements = document.getElementsByClassName("query");
+for (let element in queryElements)
+    queryElements[element].appendChild(document.createTextNode(query));
 
 fetch("/dictionary.json")
     .then(response => response.json())
