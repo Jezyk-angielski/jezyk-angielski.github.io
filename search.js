@@ -5,8 +5,10 @@ document.title = `Wyniki wyszukiwania dla „${query}” - Język angielski`;
 document.getElementById("query-link").href = document.location.search;
 
 let queryElements = document.getElementsByClassName("query");
-for (let element in queryElements)
+for (let element in queryElements) {
+    console.log(`${element} - ${queryElements[element]}`);
     queryElements[element].appendChild(document.createTextNode(query));
+}
 
 fetch("/dictionary.json")
     .then(response => response.json())
