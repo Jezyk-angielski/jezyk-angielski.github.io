@@ -158,6 +158,11 @@ h3 {
     color: gray;
 }
 
+video {
+    max-width: 100%;
+    width: 32em;
+}
+
 h4 {
     margin: 0;
     padding: 1em 3em;
