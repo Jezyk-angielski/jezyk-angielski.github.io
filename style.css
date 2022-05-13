@@ -133,6 +133,14 @@ p.word {
     animation: loading_animation 1s linear infinite;
 }
 
+#results-lessons {
+    display: none;
+}
+
+#results-words {
+    display: none;
+}
+
 .pages {
     display: flex;
     flex-wrap: wrap;
