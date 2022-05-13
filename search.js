@@ -12,7 +12,7 @@ fetch("/course.json")
     .then(course => {
         let lessons_found = false;
 
-        for (let [key, value] of Object.entries(dictionary)) {
+        for (let [key, value] of Object.entries(course)) {
             if (value.toLowerCase().includes(query.toLowerCase())) {
                 let link = document.createElement("a");
                 link.setAttribute("href", `/kurs/${key}`);
