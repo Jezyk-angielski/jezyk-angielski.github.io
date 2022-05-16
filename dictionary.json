@@ -1,5 +1,8 @@
 {
+    "American": "American",
     "And-you-": "And you?",
+    "Are-you----": "Are you ...",
+    "English": "English",
     "Fine--thanks-": "Fine, thanks.",
     "Good--thanks-": "Good, thanks.",
     "Hello-": "Hello.",
@@ -7,6 +10,8 @@
     "How-is-it-going-": "How is it going?",
     "I-am----": "I am ...",
     "Nice-to-meet-you-": "Nice to meet you.",
+    "Polish": "Polish",
     "Very-well--thank-you-": "Very well, thank you.",
-    "What-is-your-name-": "What is your name?"
+    "What-is-your-name-": "What is your name?",
+    "Where-are-you-from-": "Where are you from?"
 }
