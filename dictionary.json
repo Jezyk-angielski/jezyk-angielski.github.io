@@ -2,6 +2,7 @@
     "American": "American",
     "And-you-": "And you?",
     "Are-you----": "Are you ...",
+    "England": "England",
     "English": "English",
     "Fine--thanks-": "Fine, thanks.",
     "Good--thanks-": "Good, thanks.",
@@ -9,9 +10,15 @@
     "Hi-": "Hi.",
     "How-is-it-going-": "How is it going?",
     "I-am----": "I am ...",
+    "I-am-from----": "I am from ...",
+    "London": "London",
     "Nice-to-meet-you-": "Nice to meet you.",
+    "Poland": "Poland",
     "Polish": "Polish",
+    "United-States": "United States",
     "Very-well--thank-you-": "Very well, thank you.",
+    "Warsaw": "Warsaw",
+    "Washington--D-C-": "Washington, D.C.",
     "What-is-your-name-": "What is your name?",
     "Where-are-you-from-": "Where are you from?"
 }
