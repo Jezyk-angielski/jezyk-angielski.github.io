@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <link rel="icon" href="/favicon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Kurs - Język angielski</title>
-        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/favicon.png">
+        <link rel="stylesheet" type="text/css" media="screen" href="/style.css">
     </head>
     <body>
-        <h1><a href="/"><img src="/favicon.png">Język angielski</a></h1>
-        <div class="menu">
-            <p class="menu-item"><a href="/kurs">Kurs</a></p>
-            <p class="menu-item"><a href="/slownik">Słownik</a></p>
-            <form class="menu-item right" method="get" action="szukaj">
-                <input type="text" name="query" placeholder="Wpisz szukane słowo..." required>
+        <header>
+            <h1><a href="/"><img src="/favicon.png">Język angielski</a></h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="/kurs">Kurs</a></li>
+                <li><a href="/slownik">Słownik</a></li>
+            </ul>
+            <form method="get" action="/szukaj">
+                <input type="text" name="query" placeholder="Wpisz szukane słowa..." required>
                 <input type="submit" value="Szukaj">
             </form>
-        </div>
-        <div class="content">
+        </nav>
+        <article>
             <h2>Kurs</h2>
             <p class="path"><a href="/">Język angielski</a> / <a href="/kurs">Kurs</a></p>
             <div id="loading"></div>
-            <div id="results"></div>
-            <div class="pages">
+            <section id="results"></section>
+            <section class="pages">
                 <div>
                     <h3 class="page-header">Poprzednia strona</h3>
                     <p class="the-end">Koniec</p>
@@ -29,8 +36,8 @@
                     <h3 class="page-header">Następna strona</h3>
                     <p><a href="/kurs/lekcja-1--powitanie-i-przedstawianie-sie">Lekcja 1: Powitanie i przedstawianie się</a></p>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
         <script src="/course.js"></script>
     </body>
 </html>
