@@ -1,4 +1,5 @@
 {
+    "----is-called----": "... is called ...",
     "American": "American",
     "And-what-about-you-": "And what about you?",
     "And-you-": "And you?",
@@ -22,6 +23,12 @@
     "Madrid": "Madrid",
     "Mexico-City": "Mexico City",
     "Mexico": "Mexico",
+    "my-father": "my father",
+    "my-grandfather": "my grandfather",
+    "my-grandmother": "my grandmother",
+    "my-husband": "my husband",
+    "my-mother": "my mother",
+    "my-wife": "my wife",
     "near": "near",
     "Nice-to-meet-you-": "Nice to meet you.",
     "Poland": "Poland",
