@@ -1,5 +1,12 @@
 {
+    "----for-fun-": "... for fun.",
     "----is-called----": "... is called ...",
+    "----to-find----": "... to find ...",
+    "----to-speak-with----": "... to speak with ...",
+    "----to-study-in----": "... to study in ...",
+    "----to-talk-to----": "... to talk to ...",
+    "----to-travel-around----": "... to travel around ...",
+    "----to-work-in----": "... to work in ...",
     "American": "American",
     "And-what-about-you-": "And what about you?",
     "And-you-": "And you?",
@@ -27,6 +34,8 @@
     "I-am-----years-old-": "I am ... years old.",
     "I-am----": "I am ...",
     "I-am-from----": "I am from ...",
+    "I-am-learning----": "I am learning ...",
+    "I-learn----": "I learn ...",
     "I-live-in----": "I live in ...",
     "Italian": "Italian",
     "Italy": "Italy",
@@ -69,5 +78,7 @@
     "What-about-you-": "What about you?",
     "What-is-your-name-": "What is your name?",
     "Where-are-you-from-": "Where are you from?",
-    "Where-do-you-live-": "Where do you live?"
+    "Where-do-you-live-": "Where do you live?",
+    "Why-are-you-learning----": "Why are you learning ...",
+    "Why-do-you-learn----": "Why do you learn ..."
 }
