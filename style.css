@@ -36,6 +36,20 @@
 
 
 
+@keyframes footer_animation {
+    0% {
+        transform: translateY(50%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+
+
 body {
     display: flex;
     flex-flow: column;
@@ -281,8 +295,27 @@ main p {
     display: none;
 }
 
-button {
+main nav button {
     margin-left: auto;
+}
+
+div nav {
+    display: block;
+}
+
+div nav button {
+    margin: 1em;
+}
+
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-align: center;
+}
+
+button {
     padding: 1em 5%;
 
     border: 0;
@@ -295,10 +328,37 @@ button {
     color: white;
 }
 
-button:hover {
+button:not(.grayed):not(.chosen):hover {
     background-color: #24FFFF;
 }
 
-button:active {
+button:not(.grayed):not(.chosen):active {
     background-color: #096B6B;
+}
+
+.correct.chosen {
+    background-color: #24FF24;
+}
+
+.incorrect.chosen {
+    background-color: #FF2424;
+}
+
+.grayed {
+    background-color: #D6D6D6;
+}
+
+footer {
+    display: none;
+
+    color: white;
+    animation: footer_animation 1s;
+}
+
+footer.correct {
+    background-color: #12D612;
+}
+
+footer.incorrect {
+    background-color: #D61212;
 }
