@@ -10,23 +10,55 @@
 
 
 
+@keyframes page_enter_animation {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes page_exit_animation {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateX(50%);
+        opacity: 0%;
+    }
+}
+
+
+
 body {
     display: flex;
     flex-flow: column;
 
+    overflow-x: hidden;
+
     height: 100vh;
     margin: 0;
 
-    background-color: aliceblue;
+    background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
-    background-color: burlywood;
+    display: flex;
+
+    background-color: #FF7F27;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header h1 {
+    flex-grow: 1;
+
     margin: 0;
     line-height: 1em;
 }
@@ -50,13 +82,12 @@ nav {
     display: flex;
     flex-wrap: wrap;
 
-    margin: 0;
-    background-color: antiquewhite;
+    margin: 1.4em;
 }
 
 nav li {
     display: inline-block;
-    padding: 1em;
+    padding: 1em 1.5em;
 }
 
 nav form {
@@ -84,7 +115,7 @@ p {
 
 a {
     text-decoration: none;
-    color: brown;
+    color: #12D6D6;
 }
 
 ul {
@@ -212,4 +243,62 @@ video {
 
 .translation {
     padding: 1em 4em;
+}
+
+
+
+main {
+    display: flex;
+    flex-flow: column;
+
+    height: 100%;
+    padding: 5%;
+
+    animation: page_enter_animation 1s;
+
+    background-color: white;
+}
+
+main h2 {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+main h3 {
+    padding: 0;
+    margin: 0 0 2em 0;
+}
+
+main p {
+    padding: 0;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+.page:not(:nth-child(2)) {
+    display: none;
+}
+
+button {
+    margin-left: auto;
+    padding: 1em 5%;
+
+    border: 0;
+    border-radius: 2em;
+
+    background-color: #12D6D6;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+button:hover {
+    background-color: #24FFFF;
+}
+
+button:active {
+    background-color: #096B6B;
 }
