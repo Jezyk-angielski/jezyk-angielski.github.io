@@ -268,7 +268,7 @@ main {
     height: 100%;
     padding: 5%;
 
-    animation: page_enter_animation 1s;
+    animation: page_enter_animation 0.5s;
 
     background-color: white;
 }
@@ -348,11 +348,20 @@ button:not(.grayed):not(.chosen):active {
     background-color: #D6D6D6;
 }
 
+#footer {
+    display: none;
+    height: 10em;
+}
+
+#footer-content {
+    overflow: hidden;
+}
+
 footer {
     display: none;
 
     color: white;
-    animation: footer_animation 1s;
+    animation: footer_animation 0.5s;
 }
 
 footer.correct {

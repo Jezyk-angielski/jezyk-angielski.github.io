@@ -10,26 +10,31 @@ document.getElementById("next").addEventListener("click", e => {
         return;
     }
 
+    document.getElementById("next").className = "grayed";
+    document.getElementById("footer").style.display = "none";
+
     for (let footer of document.getElementsByTagName("footer")) {
         if (footer.className.includes(`page-${current_page}`))
             footer.style.display = "none";
     }
 
-    document.getElementById(`page-${current_page}`).style.animation = "page_exit_animation 1s";
+    document.getElementById(`page-${current_page}`).style.animation = "page_exit_animation 0.5s";
 });
 
 for (let page of document.getElementsByClassName("page")) {
     page.addEventListener("animationend", e => {
+        if (e.target.style.animation.includes("page_enter_animation")) {
+            if (!document.getElementById(`page-${current_page}`).className.includes("exercise"))
+                document.getElementById("next").className = "";
+        }
+
         if (e.target.style.animation.includes("page_exit_animation")) {
             e.target.style.display = "none";
 
             current_page++;
 
             document.getElementById(`page-${current_page}`).style.display = "block";
-            document.getElementById(`page-${current_page}`).style.animation = "page_enter_animation 1s";
-
-            if (document.getElementById(`page-${current_page}`).className.includes("exercise"))
-                document.getElementById("next").className = "grayed";
+            document.getElementById(`page-${current_page}`).style.animation = "page_enter_animation 0.5s";
 
             if (current_page == pages)
                 document.getElementById("next").textContent = "Zakończ";
@@ -45,6 +50,7 @@ for (let correctButton of document.getElementsByClassName("correct")) {
             return;
 
         document.getElementById("next").className = "";
+        document.getElementById("footer").style.display = "block";
 
         for (let footer of document.getElementsByTagName("footer")) {
             if (footer.className == e.target.className)
@@ -68,6 +74,7 @@ for (let incorrectButton of document.getElementsByClassName("incorrect")) {
             return;
 
         document.getElementById("next").className = "";
+        document.getElementById("footer").style.display = "block";
 
         for (let footer of document.getElementsByTagName("footer")) {
             if (footer.className == e.target.className)
