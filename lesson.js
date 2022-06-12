@@ -45,6 +45,9 @@ for (let page of document.getElementsByClassName("page")) {
 }
 
 for (let correctButton of document.getElementsByClassName("correct")) {
+    if (correctButton.tagName != "BUTTON")
+        break;
+
     correctButton.addEventListener("click", e => {
         if (e.target.className.includes("grayed") || e.target.className.includes("chosen"))
             return;
@@ -69,6 +72,9 @@ for (let correctButton of document.getElementsByClassName("correct")) {
 }
 
 for (let incorrectButton of document.getElementsByClassName("incorrect")) {
+    if (incorrectButton.tagName != "BUTTON")
+        break;
+
     incorrectButton.addEventListener("click", e => {
         if (e.target.className.includes("grayed") || e.target.className.includes("chosen"))
             return;

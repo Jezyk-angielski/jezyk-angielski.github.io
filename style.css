@@ -354,7 +354,7 @@ ul {
 
 #footer {
     display: none;
-    height: 10em;
+    height: 7em;
 }
 
 #footer-content {
@@ -363,6 +363,7 @@ ul {
 
 footer {
     display: none;
+    height: 7em;
 
     color: white;
     animation: footer_animation 0.5s;
