@@ -132,7 +132,7 @@ a {
     color: #12D6D6;
 }
 
-ul {
+nav ul {
     margin: 0;
     padding: 0;
 
@@ -346,6 +346,10 @@ button:not(.grayed):not(.chosen):active {
 
 .grayed {
     background-color: #D6D6D6;
+}
+
+ul {
+    padding: 1em 3em;
 }
 
 #footer {
