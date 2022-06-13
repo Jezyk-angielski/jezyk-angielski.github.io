@@ -4,6 +4,8 @@ let current_page = 1;
 document.getElementById("next").addEventListener("click", e => {
     if (e.target.className.includes("grayed"))
         return;
+        
+    document.getElementById("progress-bar").value++;
 
     if (current_page == pages) {
         window.location.href = "/kurs";
