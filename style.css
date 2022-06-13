@@ -337,11 +337,11 @@ button:not(.grayed):not(.chosen):active {
 }
 
 .correct.chosen {
-    background-color: #24FF24;
+    background-color: #12D612;
 }
 
 .incorrect.chosen {
-    background-color: #FF2424;
+    background-color: #D61212;
 }
 
 .grayed {
