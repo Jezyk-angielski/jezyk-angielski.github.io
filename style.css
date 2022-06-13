@@ -361,7 +361,7 @@ ul {
 
 #footer {
     display: none;
-    height: 7em;
+    height: 6.75em;
 }
 
 #footer-content {
@@ -370,7 +370,10 @@ ul {
 
 footer {
     display: none;
-    height: 7em;
+    height: 6.75em;
+
+    padding: 1.75em;
+    box-sizing: border-box;
 
     color: white;
     animation: footer_animation 0.5s;
@@ -382,4 +385,13 @@ footer.correct {
 
 footer.incorrect {
     background-color: #D61212;
+}
+
+footer h3 {
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+footer p {
+    padding: 0;
 }
