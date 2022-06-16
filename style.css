@@ -10,6 +10,32 @@
 
 
 
+@keyframes page_enter_backwards_animation {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes page_exit_backwards_animation {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateX(50%);
+        opacity: 0%;
+    }
+}
+
+
+
 @keyframes page_enter_animation {
     0% {
         transform: translateX(50%);
@@ -398,4 +424,16 @@ footer p {
 
 p img {
     max-width: 16em;
+}
+
+h2 img {
+    margin-right: 0.5em;
+    height: 2.5em;
+
+    vertical-align: middle;
+}
+
+img.grayed {
+    background-color: white;
+    filter: grayscale(100%);
 }
