@@ -66,10 +66,8 @@ for (let page of document.getElementsByClassName("page")) {
                         } else {
                             document.getElementById("footer").style.display = "block";
                             for (let footer of document.getElementsByTagName("footer")) {
-                                if (footer.className.includes(`page-${current_page} correct`)) {
-                                    console.log(footer.className);
+                                if (footer.className.includes(`page-${current_page} correct`))
                                     footer.style.display = "block";
-                                }
                             }
                         }
 
@@ -122,8 +120,15 @@ for (let correctButton of document.getElementsByClassName("correct")) {
         document.getElementById("footer").style.display = "block";
 
         for (let footer of document.getElementsByTagName("footer")) {
-            if (footer.className == e.target.className)
-                footer.style.display = "block";
+            for (let object of e.path) {
+                if (object.tagName != "BUTTON")
+                    continue;
+
+                if (footer.className == object.className) {
+                    footer.style.display = "block";
+                    break;
+                }
+            }
         }
 
         let page = correctButton.className.split(" ")[0];
@@ -132,10 +137,15 @@ for (let correctButton of document.getElementsByClassName("correct")) {
             if (button.tagName != "BUTTON")
                 continue;
             
-            if (button == e.target)
-                button.className = `${page} correct chosen`;
-            else
-                button.className = `${page} correct grayed`;
+            for (let object of e.path) {
+                if (object.tagName != "BUTTON")
+                    continue;
+
+                if (button == object)
+                    button.className = `${page} correct chosen`;
+                else
+                    button.className = `${page} correct grayed`;
+            }
         }
     });
 }
@@ -152,8 +162,13 @@ for (let incorrectButton of document.getElementsByClassName("incorrect")) {
         document.getElementById("footer").style.display = "block";
 
         for (let footer of document.getElementsByTagName("footer")) {
-            if (footer.className == e.target.className)
-                footer.style.display = "block";
+            for (let object of e.path) {
+                if (object.tagName != "BUTTON")
+                    continue;
+                
+                if (footer.className == object.className)
+                    footer.style.display = "block";
+            }
         }
 
         let page = incorrectButton.className.split(" ")[0];
@@ -162,10 +177,15 @@ for (let incorrectButton of document.getElementsByClassName("incorrect")) {
             if (button.tagName != "BUTTON")
                 continue;
 
-            if (button == e.target)
-                button.className = `${page} incorrect chosen`;
-            else
-                button.className = `${page} incorrect grayed`;
+            for (let object of e.path) {
+                if (object.tagName != "BUTTON")
+                    continue;
+                
+                if (button == object)
+                    button.className = `${page} incorrect chosen`;
+                else
+                    button.className = `${page} incorrect grayed`;
+            }
         }
     });
 }
