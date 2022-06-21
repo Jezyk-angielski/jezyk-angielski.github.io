@@ -120,7 +120,7 @@ for (let correctButton of document.getElementsByClassName("correct")) {
         document.getElementById("footer").style.display = "block";
 
         for (let footer of document.getElementsByTagName("footer")) {
-            for (let object of e.path) {
+            for (let object of e.composedPath()) {
                 if (object.tagName != "BUTTON")
                     continue;
 
@@ -137,7 +137,7 @@ for (let correctButton of document.getElementsByClassName("correct")) {
             if (button.tagName != "BUTTON")
                 continue;
             
-            for (let object of e.path) {
+            for (let object of e.composedPath()) {
                 if (object.tagName != "BUTTON")
                     continue;
 
@@ -162,7 +162,7 @@ for (let incorrectButton of document.getElementsByClassName("incorrect")) {
         document.getElementById("footer").style.display = "block";
 
         for (let footer of document.getElementsByTagName("footer")) {
-            for (let object of e.path) {
+            for (let object of e.composedPath()) {
                 if (object.tagName != "BUTTON")
                     continue;
                 
@@ -177,7 +177,7 @@ for (let incorrectButton of document.getElementsByClassName("incorrect")) {
             if (button.tagName != "BUTTON")
                 continue;
 
-            for (let object of e.path) {
+            for (let object of e.composedPath()) {
                 if (object.tagName != "BUTTON")
                     continue;
                 
