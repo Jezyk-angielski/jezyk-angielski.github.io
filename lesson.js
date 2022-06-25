@@ -21,7 +21,7 @@ document.getElementById("arrow").addEventListener("click", e => {
             footer.style.display = "none";
     }
 
-    document.getElementById(`page-${current_page}`).style.animation = "page_exit_backwards_animation 0.5s";
+    document.getElementById(`page-${current_page}`).style.animation = "page_exit_backwards_animation 0.25s";
 });
 
 document.getElementById("next").addEventListener("click", e => {
@@ -84,7 +84,7 @@ for (let page of document.getElementsByClassName("page")) {
             current_page--;
 
             document.getElementById(`page-${current_page}`).style.display = "block";
-            document.getElementById(`page-${current_page}`).style.animation = "page_enter_backwards_animation 0.5s";
+            document.getElementById(`page-${current_page}`).style.animation = "page_enter_backwards_animation 0.25s";
 
             if (current_page < pages)
                 document.getElementById("next").textContent = "Dalej";
