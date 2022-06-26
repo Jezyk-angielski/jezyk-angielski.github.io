@@ -445,3 +445,8 @@ h2 img {
 #arrow:not(.grayed):active {
     filter: brightness(50%);
 }
+
+em {
+    font-style: normal;
+    text-decoration: underline;
+}
